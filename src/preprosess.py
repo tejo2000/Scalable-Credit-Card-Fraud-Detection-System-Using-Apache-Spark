@@ -10,3 +10,7 @@ from utils import get_file_from_S3, get_spark
 load_dotenv()
 
 hdfs_file_path = os.environ['HDFS_FILE_PATH']
+
+"""
+A function to pre-process data.
+
