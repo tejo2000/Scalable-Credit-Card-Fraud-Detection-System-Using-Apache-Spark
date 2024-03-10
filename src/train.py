@@ -10,3 +10,7 @@ from dotenv import load_dotenv
 from constants import BUCKET_NAME, TEMP_MODEL_PATH
 from utils import get_spark, upload
 
+load_dotenv()
+
+def train_model(df):
+    train, test = df.randomSplit([0.7, 0.3], seed = 2018)
