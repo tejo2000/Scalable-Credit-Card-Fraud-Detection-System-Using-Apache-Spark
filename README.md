@@ -14,3 +14,7 @@ This project involves the development of a scalable credit card fraud detection 
 
 - **Accuracy:** 92%
 - **Recall:** 88%
+- **F1-Score:** 90%
+
+## Technologies Used
+
