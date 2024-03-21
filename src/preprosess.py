@@ -14,3 +14,7 @@ hdfs_file_path = os.environ['HDFS_FILE_PATH']
 """
 A function to pre-process data.
 
+Args:
+bucket_name str Name of S3 bucket
+object_key str Name of object file
+
