@@ -14,3 +14,7 @@ load_dotenv()
 
 def train_model(df):
     train, test = df.randomSplit([0.7, 0.3], seed = 2018)
+
+    rf_clf = RandomForestClassifier(featuresCol = 'scaledFeatures', labelCol = 'Class')
+    rfModel = rf_clf.fit(train)
+
