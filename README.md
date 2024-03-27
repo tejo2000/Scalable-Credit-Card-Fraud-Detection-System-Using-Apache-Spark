@@ -18,3 +18,7 @@ This project involves the development of a scalable credit card fraud detection 
 
 ## Technologies Used
 
+- **Apache Spark & PySpark:** For distributed data processing and machine learning.
+- **HDFS (Hadoop Distributed File System):** For storing and accessing large datasets.
+- **RandomForestClassifier:** For building the fraud detection model.
+- **Pandas:** For handling and manipulating data during post-processing.
