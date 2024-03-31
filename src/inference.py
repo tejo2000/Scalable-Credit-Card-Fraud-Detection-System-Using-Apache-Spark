@@ -18,3 +18,7 @@ hdfs_file_path = os.environ['HDFS_FILE_PATH']
 
 
 def preprocess(object_key):
+    print("Inference Pipeline: Started running pipeline for data pre-processing.")
+
+    # Read file from S3 foe new batch prediction
+    df = get_file_from_S3(BUCKET_NAME, object_key)
