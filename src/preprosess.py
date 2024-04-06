@@ -18,3 +18,7 @@ Args:
 bucket_name str Name of S3 bucket
 object_key str Name of object file
 
+Returns:
+spark_df A pre-processed spark dataframe
+"""
+def preprocess(bucket_name, object_key):
