@@ -18,3 +18,7 @@ def train_model(df):
     rf_clf = RandomForestClassifier(featuresCol = 'scaledFeatures', labelCol = 'Class')
     rfModel = rf_clf.fit(train)
 
+    predictions = rfModel.transform(test)
+
+    evaluator = MulticlassClassificationEvaluator(labelCol="Class", predictionCol="prediction")
+
