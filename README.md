@@ -22,3 +22,7 @@ This project involves the development of a scalable credit card fraud detection 
 - **HDFS (Hadoop Distributed File System):** For storing and accessing large datasets.
 - **RandomForestClassifier:** For building the fraud detection model.
 - **Pandas:** For handling and manipulating data during post-processing.
+- **Python:** The primary programming language used throughout the project.
+- **Dotenv:** For managing environment variables.
+
+## Project Structure
