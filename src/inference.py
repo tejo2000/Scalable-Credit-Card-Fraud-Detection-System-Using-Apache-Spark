@@ -22,3 +22,7 @@ def preprocess(object_key):
 
     # Read file from S3 foe new batch prediction
     df = get_file_from_S3(BUCKET_NAME, object_key)
+    
+    spark = get_spark()
+
+    spark_df = spark.createDataFrame(df)
