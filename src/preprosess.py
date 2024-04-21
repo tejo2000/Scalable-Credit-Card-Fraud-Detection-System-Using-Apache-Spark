@@ -22,3 +22,7 @@ Returns:
 spark_df A pre-processed spark dataframe
 """
 def preprocess(bucket_name, object_key):
+    print("Preprocessing Pipeline: Started running pipeline for data pre-processing.")
+
+    df = get_file_from_S3(bucket_name, object_key)
+    
