@@ -22,3 +22,7 @@ def train_model(df):
 
     evaluator = MulticlassClassificationEvaluator(labelCol="Class", predictionCol="prediction")
 
+    accuracy = evaluator.evaluate(predictions)
+
+    print("Training Piepline: Training of Model completed. Overal accuracy is {0}".format(accuracy))
+
