@@ -26,3 +26,7 @@ This project involves the development of a scalable credit card fraud detection 
 - **Dotenv:** For managing environment variables.
 
 ## Project Structure
+
+- **`constants.py`**: Contains constant values such as bucket names, model paths, and table names.
+- **`inference.py`**: Handles the inference pipeline, including data preprocessing, model loading, and prediction storage.
+- **`preprocess.py`**: Responsible for the data preprocessing pipeline, including feature engineering and scaling.
