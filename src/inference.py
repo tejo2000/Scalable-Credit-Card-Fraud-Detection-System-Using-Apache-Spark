@@ -26,3 +26,7 @@ def preprocess(object_key):
     spark = get_spark()
 
     spark_df = spark.createDataFrame(df)
+
+    # Remove duplicates
+    spark_df = spark_df.distinct()
+
