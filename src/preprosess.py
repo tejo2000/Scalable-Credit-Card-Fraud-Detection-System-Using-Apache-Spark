@@ -26,3 +26,7 @@ def preprocess(bucket_name, object_key):
 
     df = get_file_from_S3(bucket_name, object_key)
     
+    spark = get_spark()
+
+    spark_df = spark.createDataFrame(df)
+
