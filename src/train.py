@@ -26,3 +26,7 @@ def train_model(df):
 
     print("Training Piepline: Training of Model completed. Overal accuracy is {0}".format(accuracy))
 
+    rfModel.write().overwrite().save(TEMP_MODEL_PATH)
+    
+    upload(BUCKET_NAME, TEMP_MODEL_PATH, "model")
+
