@@ -30,3 +30,7 @@ This project involves the development of a scalable credit card fraud detection 
 - **`constants.py`**: Contains constant values such as bucket names, model paths, and table names.
 - **`inference.py`**: Handles the inference pipeline, including data preprocessing, model loading, and prediction storage.
 - **`preprocess.py`**: Responsible for the data preprocessing pipeline, including feature engineering and scaling.
+- **`train.py`**: Manages the training process of the machine learning model and evaluates its performance.
+
+## Setup and Installation
+
