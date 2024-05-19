@@ -30,3 +30,7 @@ def preprocess(bucket_name, object_key):
 
     spark_df = spark.createDataFrame(df)
 
+    # Remove duplicates
+    spark_df = spark_df.distinct()
+
+    # Create feature column
