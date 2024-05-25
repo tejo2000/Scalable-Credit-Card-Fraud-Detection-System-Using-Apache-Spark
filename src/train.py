@@ -30,3 +30,7 @@ def train_model(df):
     
     upload(BUCKET_NAME, TEMP_MODEL_PATH, "model")
 
+    return accuracy
+
+def main():
+    spark = get_spark()
