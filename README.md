@@ -34,3 +34,7 @@ This project involves the development of a scalable credit card fraud detection 
 
 ## Setup and Installation
 
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/yourusername/credit-card-fraud-detection.git
+   cd credit-card-fraud-detection
