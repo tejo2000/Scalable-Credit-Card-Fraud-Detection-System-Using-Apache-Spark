@@ -38,3 +38,7 @@ def preprocess(object_key):
     spark_df = assembler.transform(spark_df).select('features', 'Class', 'Amount') 
 
     # Standardize input feature vector
+    scaler = StandardScaler(inputCol="features", outputCol="scaledFeatures",
+                        withStd=True, withMean=False)
+
+    # Compute summary statistics by fitting the StandardScaler
