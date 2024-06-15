@@ -38,3 +38,7 @@ def preprocess(bucket_name, object_key):
        'V11', 'V12', 'V13', 'V14', 'V15', 'V16', 'V17', 'V18', 'V19', 'V20',
        'V21', 'V22', 'V23', 'V24', 'V25', 'V26', 'V27', 'V28', 'Amount']
     assembler = VectorAssembler(inputCols=numericCols, outputCol="features")
+    spark_df = assembler.transform(spark_df).select('features', 'Class') 
+
+    # Standardize input feature vector
+    scaler = StandardScaler(inputCol="features", outputCol="scaledFeatures",
