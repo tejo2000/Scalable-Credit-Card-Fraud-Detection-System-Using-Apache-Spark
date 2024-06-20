@@ -38,3 +38,4 @@ def main():
     preprocessed_df = spark.read.parquet(os.path.join(os.environ["HDFS_FILE_PATH"],sys.argv[1]))
     train_model(preprocessed_df)
 
+main()
