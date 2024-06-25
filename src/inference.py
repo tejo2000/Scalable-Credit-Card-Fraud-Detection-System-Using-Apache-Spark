@@ -42,3 +42,7 @@ def preprocess(object_key):
                         withStd=True, withMean=False)
 
     # Compute summary statistics by fitting the StandardScaler
+    scalerModel = scaler.fit(spark_df)
+
+    # Normalize each feature to have unit standard deviation.
+    spark_df = scalerModel.transform(spark_df)
