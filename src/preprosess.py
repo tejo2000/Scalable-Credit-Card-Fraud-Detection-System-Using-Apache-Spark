@@ -42,3 +42,7 @@ def preprocess(bucket_name, object_key):
 
     # Standardize input feature vector
     scaler = StandardScaler(inputCol="features", outputCol="scaledFeatures",
+                        withStd=True, withMean=False)
+
+    # Compute summary statistics by fitting the StandardScaler
+    scalerModel = scaler.fit(spark_df)
