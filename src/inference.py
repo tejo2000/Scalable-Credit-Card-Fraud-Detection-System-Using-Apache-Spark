@@ -46,3 +46,7 @@ def preprocess(object_key):
 
     # Normalize each feature to have unit standard deviation.
     spark_df = scalerModel.transform(spark_df)
+
+    print("Inference Pipeline: Completed running pipeline for data pre-processing.")
+
+    return spark_df
