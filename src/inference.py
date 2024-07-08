@@ -50,3 +50,7 @@ def preprocess(object_key):
     print("Inference Pipeline: Completed running pipeline for data pre-processing.")
 
     return spark_df
+
+def transfer_prediction(data):
+    print("Inference Pipeline: Started writing data to DynamoDB")
+    for ind, item in data.iterrows():
