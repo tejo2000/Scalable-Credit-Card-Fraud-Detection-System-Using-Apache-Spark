@@ -50,3 +50,7 @@ def preprocess(bucket_name, object_key):
     # Normalize each feature to have unit standard deviation.
     spark_df = scalerModel.transform(spark_df)
 
+    # Write pre-processed data to hdfs
+    spark_df.write.parquet(os.path.join(hdfs_file_path, object_key.replace(".csv", "2.parquet")))
+
+    print("Preprocessing Pipeline: Completed running pipeline for data pre-processing.")
