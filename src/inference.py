@@ -54,3 +54,7 @@ def preprocess(object_key):
 def transfer_prediction(data):
     print("Inference Pipeline: Started writing data to DynamoDB")
     for ind, item in data.iterrows():
+        amount = item["Amount"]
+        actual_class = item["Class"]
+        pred_class = int(item["prediction"])
+
