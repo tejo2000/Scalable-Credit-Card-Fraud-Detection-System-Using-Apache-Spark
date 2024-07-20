@@ -54,3 +54,7 @@ def preprocess(bucket_name, object_key):
     spark_df.write.parquet(os.path.join(hdfs_file_path, object_key.replace(".csv", "2.parquet")))
 
     print("Preprocessing Pipeline: Completed running pipeline for data pre-processing.")
+
+    return spark_df
+
+    
