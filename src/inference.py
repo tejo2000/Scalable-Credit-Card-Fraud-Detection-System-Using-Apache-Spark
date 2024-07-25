@@ -58,3 +58,7 @@ def transfer_prediction(data):
         actual_class = item["Class"]
         pred_class = int(item["prediction"])
 
+        data_item = {
+            "prediction_id": {"S": str(uuid.uuid4())},
+            "amount": {"N": str(amount)},
+            "actual_class": {"N": str(actual_class)},
