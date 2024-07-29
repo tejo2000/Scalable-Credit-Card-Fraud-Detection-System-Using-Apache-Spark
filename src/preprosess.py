@@ -58,3 +58,5 @@ def preprocess(bucket_name, object_key):
     return spark_df
 
     
+if __name__ == "__main__":
+    preprocess(sys.argv[1], sys.argv[2])
