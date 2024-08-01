@@ -62,3 +62,7 @@ def transfer_prediction(data):
             "prediction_id": {"S": str(uuid.uuid4())},
             "amount": {"N": str(amount)},
             "actual_class": {"N": str(actual_class)},
+            "pred_class": {"N": str(pred_class)}
+        }
+        print(data_item)
+        # store_prediction(PREDICTION_TABLE, data_item)
