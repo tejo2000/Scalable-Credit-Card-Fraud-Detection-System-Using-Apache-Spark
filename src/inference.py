@@ -66,3 +66,7 @@ def transfer_prediction(data):
         }
         print(data_item)
         # store_prediction(PREDICTION_TABLE, data_item)
+    print("Inference Pipeline: Inference PipelineCompleted writing data to DynamoDB")
+
+if __name__ == "__main__":
+    s3_model_path = sys.argv[2]
