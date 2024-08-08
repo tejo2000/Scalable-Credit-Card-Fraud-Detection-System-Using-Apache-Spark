@@ -70,3 +70,7 @@ def transfer_prediction(data):
 
 if __name__ == "__main__":
     s3_model_path = sys.argv[2]
+    test_file_path = sys.argv[1]
+
+    
+    df = preprocess(test_file_path)
