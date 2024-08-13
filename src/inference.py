@@ -74,3 +74,7 @@ if __name__ == "__main__":
 
     
     df = preprocess(test_file_path)
+
+    download(BUCKET_NAME, s3_model_path, TEMP_MODEL_PATH)
+    model = RandomForestClassificationModel.load(TEMP_MODEL_PATH)
+
