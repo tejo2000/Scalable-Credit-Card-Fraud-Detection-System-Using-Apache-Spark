@@ -78,3 +78,7 @@ if __name__ == "__main__":
     download(BUCKET_NAME, s3_model_path, TEMP_MODEL_PATH)
     model = RandomForestClassificationModel.load(TEMP_MODEL_PATH)
 
+    predictions = model.transform(df)
+    p = predictions.select('Amount', 'Class', 'prediction')
+    p.coalesce(1).write.option("header","true").option("sep",",").mode("overwrite").csv("output/path")
+
