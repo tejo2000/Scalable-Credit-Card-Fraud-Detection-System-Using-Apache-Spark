@@ -82,3 +82,7 @@ if __name__ == "__main__":
     p = predictions.select('Amount', 'Class', 'prediction')
     p.coalesce(1).write.option("header","true").option("sep",",").mode("overwrite").csv("output/path")
 
+    all_files = os.listdir("output/path")    
+    csv_files = list(filter(lambda f: f.endswith('.csv'), all_files))
+    df = pd.read_csv("output/path/{0}".format(csv_files[0]))
+
