@@ -86,3 +86,7 @@ if __name__ == "__main__":
     csv_files = list(filter(lambda f: f.endswith('.csv'), all_files))
     df = pd.read_csv("output/path/{0}".format(csv_files[0]))
 
+    shutil.rmtree("output/path")
+    shutil.rmtree(TEMP_MODEL_PATH)
+    transfer_prediction(df)
+
