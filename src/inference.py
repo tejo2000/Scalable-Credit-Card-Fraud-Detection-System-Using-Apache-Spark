@@ -90,3 +90,4 @@ if __name__ == "__main__":
     shutil.rmtree(TEMP_MODEL_PATH)
     transfer_prediction(df)
 
+    print("Inference Pipeline: Completed batch prediction for file {0}".format(test_file_path))
