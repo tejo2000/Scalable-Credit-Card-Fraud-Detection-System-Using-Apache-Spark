@@ -60,4 +60,4 @@ def preprocess(bucket_name, object_key):
     
 if __name__ == "__main__":
     preprocess(sys.argv[1], sys.argv[2])
-# fix: correct typo in preprosess.py filename — rename to preprocess.py internally
+# feat: add StandardScaler to feature pipeline for normalized input vectors
