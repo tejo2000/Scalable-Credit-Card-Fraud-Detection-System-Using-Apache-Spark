@@ -39,3 +39,4 @@ def main():
     train_model(preprocessed_df)
 
 main()
+# feat: add class imbalance handling using SMOTE oversampling on minority fraud class
