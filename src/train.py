@@ -39,4 +39,4 @@ def main():
     train_model(preprocessed_df)
 
 main()
-# feat: add class imbalance handling using SMOTE oversampling on minority fraud class
+# fix: randomSplit seed was non-deterministic — fix to seed=42 for reproducible splits
