@@ -39,4 +39,4 @@ def main():
     train_model(preprocessed_df)
 
 main()
-# fix: randomSplit seed was non-deterministic — fix to seed=42 for reproducible splits
+# feat: add precision, recall, and F1 metrics alongside accuracy in evaluation
