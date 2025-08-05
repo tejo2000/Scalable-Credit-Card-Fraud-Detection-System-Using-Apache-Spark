@@ -39,4 +39,4 @@ def main():
     train_model(preprocessed_df)
 
 main()
-# perf: tune RandomForest numTrees from 100 to 200 — F1 improved from 0.84 to 0.88
+# feat: save model to S3 after training via upload() helper
