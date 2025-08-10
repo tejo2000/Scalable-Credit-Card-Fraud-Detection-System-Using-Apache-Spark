@@ -39,4 +39,3 @@ def main():
     train_model(preprocessed_df)
 
 main()
-# feat: save model to S3 after training via upload() helper
