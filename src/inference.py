@@ -91,4 +91,4 @@ if __name__ == "__main__":
     transfer_prediction(df)
 
     print("Inference Pipeline: Completed batch prediction for file {0}".format(test_file_path))
-# fix: inference pipeline crashing on empty input batches — add early exit guard
+# feat: store prediction results to DynamoDB via store_prediction() helper
