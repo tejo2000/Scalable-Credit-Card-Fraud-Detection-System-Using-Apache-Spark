@@ -39,4 +39,3 @@ def main():
     train_model(preprocessed_df)
 
 main()
-# feat: add logging module replacing all print() calls for structured output
