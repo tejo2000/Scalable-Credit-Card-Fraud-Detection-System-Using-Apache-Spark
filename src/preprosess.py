@@ -60,4 +60,3 @@ def preprocess(bucket_name, object_key):
     
 if __name__ == "__main__":
     preprocess(sys.argv[1], sys.argv[2])
-# fix: VectorAssembler failing on null values — add Imputer stage to pipeline
