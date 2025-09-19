@@ -39,4 +39,4 @@ def main():
     train_model(preprocessed_df)
 
 main()
-# perf: switch from RandomForest to GBTClassifier — accuracy improved to 94%
+# feat: add cross-validation with 5-fold CV to reduce overfitting risk
