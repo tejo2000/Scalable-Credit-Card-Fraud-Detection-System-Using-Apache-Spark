@@ -39,4 +39,3 @@ def main():
     train_model(preprocessed_df)
 
 main()
-# feat: add feature importance output after training — top fraud indicators logged

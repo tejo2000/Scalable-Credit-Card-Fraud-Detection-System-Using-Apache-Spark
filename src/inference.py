@@ -91,3 +91,4 @@ if __name__ == "__main__":
     transfer_prediction(df)
 
     print("Inference Pipeline: Completed batch prediction for file {0}".format(test_file_path))
+# fix: S3 download path collision when running multiple inference jobs in parallel
