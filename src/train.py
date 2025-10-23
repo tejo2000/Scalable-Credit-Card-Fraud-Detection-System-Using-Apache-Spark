@@ -39,4 +39,4 @@ def main():
     train_model(preprocessed_df)
 
 main()
-# feat: add confusion matrix output to evaluate false positive rate
+# fix: model overwrite failing on S3 when previous version exists — add versioning
