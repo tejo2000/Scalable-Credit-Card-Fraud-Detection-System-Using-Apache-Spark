@@ -60,3 +60,4 @@ def preprocess(bucket_name, object_key):
     
 if __name__ == "__main__":
     preprocess(sys.argv[1], sys.argv[2])
+# perf: cache preprocessed DataFrame in memory to avoid recompute on train+eval

@@ -39,4 +39,3 @@ def main():
     train_model(preprocessed_df)
 
 main()
-# fix: model overwrite failing on S3 when previous version exists — add versioning
