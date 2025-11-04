@@ -38,3 +38,4 @@ This project involves the development of a scalable credit card fraud detection 
    ```bash
    git clone https://github.com/yourusername/credit-card-fraud-detection.git
    cd credit-card-fraud-detection
+# docs: update README with architecture diagram, performance metrics, and setup guide
